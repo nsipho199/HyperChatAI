@@ -102,6 +102,23 @@ cp .env.example .env
 npx expo start
 ```
 
+## 📱 Building APK
+
+```bash
+# Prebuild Android project
+npx expo prebuild --platform android
+
+# Build debug APK
+cd android && ./gradlew assembleDebug
+
+# APK location: android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+Or use EAS Build:
+```bash
+npx eas build --platform android --profile preview
+```
+
 ## 🧠 AI Commands
 
 | Command | Action |
