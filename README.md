@@ -1,11 +1,18 @@
 # HyperChat AI 🤖
 
-> **Intelligent Messenger Platform** — AI-powered messaging where communication meets artificial intelligence.
+<div align="center">
 
 ![Platform](https://img.shields.io/badge/Platform-React%20Native-61DAFB?style=flat-square)
 ![Framework](https://img.shields.io/badge/Framework-Expo-000020?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Stars](https://img.shields.io/github/stars/nsipho199/HyperChatAI?style=social)
+
+**Intelligent Messenger Platform** — AI-powered messaging where communication meets artificial intelligence.
+
+</div>
+
+---
 
 ## ✨ Features
 
@@ -76,6 +83,35 @@ OPENAI_API_KEY=your_api_key
 ANTHROPIC_API_KEY=your_api_key
 ```
 
+
+---
+
+## 📖 Quick Start
+
+```bash
+# Clone and install
+git clone https://github.com/nsipho199/HyperChatAI.git
+cd HyperChatAI
+npm install
+
+# Configure AI (optional)
+cp .env.example .env
+# Edit .env with your OpenRouter API key
+
+# Run
+npx expo start
+```
+
+## 🧠 AI Commands
+
+| Command | Action |
+|---------|--------|
+| `"`Help`"` | See all capabilities |
+| `"`Build a [app name]`"` | Generate complete app |
+| `"`Generate [image]`"` | Create images |
+| `"`Analyze this image`"` | With uploaded photo |
+
+---
 ## 📁 Project Structure
 
 ```

@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  lint-and-typecheck:
+    name: TypeScript Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: ESLint check
+        run: npx eslint . --ext .ts,.tsx
+        continue-on-error: true
+
+  build-expo:
+    name: Expo Build Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check Expo project
+        run: npx expo-doctor --fix || true
+
+      - name: Prebuild for Android
+        run: npx expo prebuild --platform android --clean
+        continue-on-error: true
+
+      - name: Prebuild for iOS
+        run: npx expo prebuild --platform ios --clean
+        continue-on-error: true
