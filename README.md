@@ -4,6 +4,7 @@
 
 ![Platform](https://img.shields.io/badge/Platform-React%20Native-61DAFB?style=flat-square)
 ![Framework](https://img.shields.io/badge/Framework-Expo-000020?style=flat-square)
+![Android](https://img.shields.io/badge/Android-12+-3DDC84?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
@@ -11,7 +12,8 @@
 
 **[⬇️ Download HyperChat AI v1.0.0](https://github.com/nsipho199/HyperChatAI/releases/download/v1.0.0/HyperChatAI.apk)**
 
-**Size:** 222 MB
+**Size:** 30 MB  
+**Requires:** Android 12 (API 31) or higher, arm64-v8a architecture
 
 ## ✨ Features
 
@@ -40,11 +42,24 @@
 
 **Fully free forever** — Unlimited, open, and privacy-focused.
 
+## 📋 Requirements
+
+| Requirement | Specification |
+|-------------|---------------|
+| **Android Version** | 12.0 (API 31) or higher |
+| **Architecture** | arm64-v8a |
+| **RAM** | 3GB minimum |
+| **Storage** | 100MB free space |
+
 ## 🚀 Installation
 
 1. **Download APK:** [Click here to download](https://github.com/nsipho199/HyperChatAI/releases/download/v1.0.0/HyperChatAI.apk)
-2. **Enable Unknown Sources:** Go to Settings → Security → Enable "Install from unknown sources"
-3. **Install:** Open the downloaded APK and install
+2. **Enable Unknown Sources:** 
+   - Go to Settings → Apps → HyperChat AI
+   - Tap "Install unknown apps" or "Special access"
+   - Enable "Install unknown apps"
+3. **Install:** Open the downloaded APK and tap Install
+4. **Launch:** Open HyperChat AI and start chatting!
 
 ## 🔧 Build from Source
 
@@ -60,9 +75,9 @@ npm install
 npx expo prebuild --platform android
 
 # Build APK
-cd android && ./gradlew assembleDebug
+cd android && ./gradlew assembleRelease
 
-# APK Location: android/app/build/outputs/apk/debug/app-debug.apk
+# APK Location: android/app/build/outputs/apk/release/app-release.apk
 ```
 
 ## 📁 Project Structure
@@ -86,15 +101,6 @@ HyperChatAI/
 │   └── utils/             # Utilities
 └── assets/               # Images & fonts
 ```
-
-## 🎨 Design System
-
-| Element | Value |
-|---------|-------|
-| Primary | Indigo `#6366F1` |
-| AI Accent | Purple `#8B5CF6` |
-| Background | Dark Slate `#0F172A` |
-| Surface | Elevated surfaces `#1E293B` |
 
 ## 🤝 Contributing
 
