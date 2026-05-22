@@ -58,6 +58,11 @@ export interface AIMessageMetadata {
   generatedImage?: string;
   generatedApp?: AppBuildResult;
   analyzedImage?: string;
+  location?: {
+    latitude: number;
+    longitude: number;
+    address?: string;
+  };
 }
 
 export interface AppBuildResult {

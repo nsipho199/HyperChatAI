@@ -41,7 +41,27 @@
         {
           "photosPermission": "Allow HyperChat AI to access your photos to analyze images."
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow HyperChat AI to access your location for sharing in chats."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow HyperChat AI to access your microphone for voice messages."
+        }
       ]
+    ],
+    "permissions": [
+      "CAMERA",
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "RECORD_AUDIO",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_COARSE_LOCATION"
     ],
     "extra": {
       "openaiApiKey": ""
