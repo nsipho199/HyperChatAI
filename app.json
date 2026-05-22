@@ -24,7 +24,11 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "package": "com.hyperchat.ai",
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 1,
+      "minSdkVersion": 31,
+      "targetSdkVersion": 34,
+      "compileSdkVersion": 35
     },
     "web": {
       "favicon": "./assets/favicon.png"
